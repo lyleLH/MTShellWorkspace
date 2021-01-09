@@ -1,0 +1,6 @@
+framework module Pods_MTShellWorkspace {
+  umbrella header "Pods-MTShellWorkspace-umbrella.h"
+
+  export *
+  module * { export * }
+}

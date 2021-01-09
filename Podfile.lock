@@ -1,0 +1,16 @@
+PODS:
+  - MTCategoryComponent (1.0.0)
+
+DEPENDENCIES:
+  - MTCategoryComponent
+
+SPEC REPOS:
+  https://github.com/lyleLH/MTSpecs:
+    - MTCategoryComponent
+
+SPEC CHECKSUMS:
+  MTCategoryComponent: 357a1ebeecf83d09c7a5a06004c12b976a77e784
+
+PODFILE CHECKSUM: ede70c2a49d39dab2c185f489a74ee9433e4d456
+
+COCOAPODS: 1.9.3

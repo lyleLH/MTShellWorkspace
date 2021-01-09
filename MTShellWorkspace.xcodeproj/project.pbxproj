@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D070850BF41F1A7B844C588 /* Pods_MTShellWorkspace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA41E5BFFE6353231CAEC2 /* Pods_MTShellWorkspace.framework */; };
 		E28FC5E125AA097800AF4D69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E28FC5E025AA097800AF4D69 /* AppDelegate.m */; };
 		E28FC5E425AA097800AF4D69 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E28FC5E325AA097800AF4D69 /* SceneDelegate.m */; };
 		E28FC5E725AA097800AF4D69 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E28FC5E625AA097800AF4D69 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A04589FEC344AD5A653B4EA /* Pods-MTShellWorkspace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTShellWorkspace.release.xcconfig"; path = "Target Support Files/Pods-MTShellWorkspace/Pods-MTShellWorkspace.release.xcconfig"; sourceTree = "<group>"; };
+		81BA41E5BFFE6353231CAEC2 /* Pods_MTShellWorkspace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTShellWorkspace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28FC5DC25AA097800AF4D69 /* MTShellWorkspace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTShellWorkspace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28FC5DF25AA097800AF4D69 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E28FC5E025AA097800AF4D69 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		E28FC5EE25AA097900AF4D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E28FC5F025AA097900AF4D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E28FC5F125AA097900AF4D69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE0EC165D94A30B8CBC48E48 /* Pods-MTShellWorkspace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTShellWorkspace.debug.xcconfig"; path = "Target Support Files/Pods-MTShellWorkspace/Pods-MTShellWorkspace.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D070850BF41F1A7B844C588 /* Pods_MTShellWorkspace.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32D035113F42E11B270BCC6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81BA41E5BFFE6353231CAEC2 /* Pods_MTShellWorkspace.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E28FC5D325AA097800AF4D69 = {
 			isa = PBXGroup;
 			children = (
 				E28FC5DE25AA097800AF4D69 /* MTShellWorkspace */,
 				E28FC5DD25AA097800AF4D69 /* Products */,
+				E72C368668BF89E957231CAC /* Pods */,
+				32D035113F42E11B270BCC6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +91,16 @@
 			path = MTShellWorkspace;
 			sourceTree = "<group>";
 		};
+		E72C368668BF89E957231CAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE0EC165D94A30B8CBC48E48 /* Pods-MTShellWorkspace.debug.xcconfig */,
+				6A04589FEC344AD5A653B4EA /* Pods-MTShellWorkspace.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E28FC5F525AA097900AF4D69 /* Build configuration list for PBXNativeTarget "MTShellWorkspace" */;
 			buildPhases = (
+				64F667E746EEE4B8B01BAF40 /* [CP] Check Pods Manifest.lock */,
 				E28FC5D825AA097800AF4D69 /* Sources */,
 				E28FC5D925AA097800AF4D69 /* Frameworks */,
 				E28FC5DA25AA097800AF4D69 /* Resources */,
+				2B50E656D42CCE0639687509 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B50E656D42CCE0639687509 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MTShellWorkspace/Pods-MTShellWorkspace-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MTShellWorkspace/Pods-MTShellWorkspace-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MTShellWorkspace/Pods-MTShellWorkspace-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64F667E746EEE4B8B01BAF40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MTShellWorkspace-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E28FC5D825AA097800AF4D69 /* Sources */ = {
@@ -288,6 +357,7 @@
 		};
 		E28FC5F625AA097900AF4D69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE0EC165D94A30B8CBC48E48 /* Pods-MTShellWorkspace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +376,7 @@
 		};
 		E28FC5F725AA097900AF4D69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A04589FEC344AD5A653B4EA /* Pods-MTShellWorkspace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
